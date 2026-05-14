@@ -8,6 +8,7 @@
   --rose: #e77f82;
   --teal: #237e78;
   --berry: #8b315f;
+  --lime: #a8d957;
   --line: rgba(37, 33, 30, 0.14);
   --shadow: 0 18px 50px rgba(52, 40, 31, 0.13);
 }
@@ -390,10 +391,8 @@ main {
   background: var(--berry);
 }
 
-.swatch-cream > span {
-  background:
-    linear-gradient(135deg, rgba(248, 200, 75, 0.26), transparent 42%),
-    var(--paper);
+.swatch-lime > span {
+  background: var(--lime);
 }
 
 .pillar-grid article {
@@ -423,8 +422,8 @@ main {
 }
 
 .pillar-grid article:nth-child(5) {
-  background: linear-gradient(180deg, rgba(92, 142, 69, 0.22), rgba(255, 255, 255, 0.82) 72%);
-  border-top: 8px solid #5c8e45;
+  background: linear-gradient(180deg, rgba(168, 217, 87, 0.36), rgba(255, 255, 255, 0.82) 72%);
+  border-top: 8px solid var(--lime);
 }
 
 .table-card {
