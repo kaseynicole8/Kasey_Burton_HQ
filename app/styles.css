@@ -330,6 +330,72 @@ main {
   gap: 14px;
 }
 
+.color-palette {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin: 26px 0 18px;
+}
+
+.swatch {
+  display: grid;
+  grid-template-rows: 92px auto;
+  overflow: hidden;
+  min-height: 178px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.swatch > span {
+  display: block;
+  border-bottom: 1px solid rgba(37, 33, 30, 0.16);
+}
+
+.swatch div {
+  padding: 14px;
+}
+
+.swatch h3,
+.swatch p {
+  margin: 0;
+}
+
+.swatch h3 {
+  font-size: 0.96rem;
+}
+
+.swatch p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.swatch-sun > span {
+  background: var(--sun);
+}
+
+.swatch-rose > span {
+  background: var(--rose);
+}
+
+.swatch-teal > span {
+  background: var(--teal);
+}
+
+.swatch-berry > span {
+  background: var(--berry);
+}
+
+.swatch-cream > span {
+  background:
+    linear-gradient(135deg, rgba(248, 200, 75, 0.26), transparent 42%),
+    var(--paper);
+}
+
 .pillar-grid article {
   min-height: 170px;
   padding: 20px;
@@ -337,23 +403,28 @@ main {
 }
 
 .pillar-grid article:nth-child(1) {
-  border-top: 5px solid var(--sun);
+  background: linear-gradient(180deg, rgba(248, 200, 75, 0.45), rgba(255, 255, 255, 0.82) 72%);
+  border-top: 8px solid var(--sun);
 }
 
 .pillar-grid article:nth-child(2) {
-  border-top: 5px solid var(--rose);
+  background: linear-gradient(180deg, rgba(231, 127, 130, 0.32), rgba(255, 255, 255, 0.82) 72%);
+  border-top: 8px solid var(--rose);
 }
 
 .pillar-grid article:nth-child(3) {
-  border-top: 5px solid var(--teal);
+  background: linear-gradient(180deg, rgba(35, 126, 120, 0.24), rgba(255, 255, 255, 0.82) 72%);
+  border-top: 8px solid var(--teal);
 }
 
 .pillar-grid article:nth-child(4) {
-  border-top: 5px solid var(--berry);
+  background: linear-gradient(180deg, rgba(139, 49, 95, 0.22), rgba(255, 255, 255, 0.82) 72%);
+  border-top: 8px solid var(--berry);
 }
 
 .pillar-grid article:nth-child(5) {
-  border-top: 5px solid #5c8e45;
+  background: linear-gradient(180deg, rgba(92, 142, 69, 0.22), rgba(255, 255, 255, 0.82) 72%);
+  border-top: 8px solid #5c8e45;
 }
 
 .table-card {
@@ -470,6 +541,7 @@ code {
   }
 
   .quick-grid,
+  .color-palette,
   .pillar-grid,
   .timeline,
   .metrics,
@@ -488,6 +560,7 @@ code {
   }
 
   .quick-grid,
+  .color-palette,
   .pillar-grid,
   .timeline,
   .metrics,
@@ -503,4 +576,3 @@ code {
     width: 100%;
   }
 }
-
